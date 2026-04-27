@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoCycle Tri-Power Fan</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    background: #008B8B;
+}
+
+/* ⭐ INI KUNCI UTAMA GAMBAR SEMUA SAMA */
+img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    margin: 10px 0;
+}
+
+.hero p {
+    opacity: 0.9;
+}
+
+/* WELCOME */
+.welcome {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* MENU */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    color: #008B8B;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #008B8B;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #008B8B;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* CONTENT */
+.content {
+    display: none;
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+img.content-img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+</style>
+
+<script>
+function toggle(id) {
+    var contents = document.getElementsByClassName("content");
+
+    // Tutup semua
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+    }
+
+    // Buka yang dipilih
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <!-- GANTI LINK GAMBAR POSTER -->
+    <img src="posterbing.jpeg" alt="Poster">
+    <h1>EcoCycle Tri-Power Fan</h1>
+    <p>A fan powered with three energy sources: solar panel, a rechargeable battery, and electricity.</p>
+</div>
+
+<!-- WELCOME -->
+<div class="welcome">
+    <p>
+        Welcome to the EcoCycle Tri-Power Fan information page.
+This website provides product descriptions, the production process, advantages, documentation, as well as information on production costs and selling prices.
+Explore each section to learn more about our product.
+    </p>
+</div>
+
+<!-- MENU -->
+<div class="menu">
+
+    <div class="card" onclick="toggle('Overview')">Overview</div>
+    <div class="card" onclick="toggle('Process')">Process</div>
+    <div class="card" onclick="toggle('Documentation')">Documentation</div>
+    <div class="card" onclick="toggle('Benefits')">Benefits</div>
+    <div class="card" onclick="toggle('Cost & Price')">Cost & Price</div>
+
+</div>
+
+<!-- CONTENT -->
+
+<div id="Overview" class="content">
+    <h2>Philosophy, Concept & Innovation, Design</h2>
+    <p>
+        The EcoCycle Tri-Power Fan is based on the idea that waste can be turned into something useful. It reflects creativity, environmental awareness, and the importance of using simple materials wisely.
+
+    </p>
+    <p>
+        This product is a simple fan made from recycled materials that uses three power sources: solar panels, a rechargeable battery, and electricity. The combination of these energy sources makes the fan more flexible and useful while still being affordable and easy to make.
+    </p>
+    <p>
+        The design uses a beach theme inspired by the sea and sky, with decorations like sand texture and small ornaments. This concept creates a cool and relaxing feeling, similar to a tropical atmosphere like Hawaii.
+    </p>
+</div>
+
+<div id="Process" class="content">
+    <h2>How to Make</h2>
+
+    <p>
+       1. Materials:
+•	Cardboard
+•	2 Solar Panels
+•	1 Switch
+•	1 Fan Blade
+•	1 Motor
+•	1 Rechargeable Battery
+•	1 Battery Holder
+•	50cm Cable
+•	1 Charging Module
+
+2. Tools:
+•	Ruler
+•	Glue Gun
+•	Scissors
+•	Soldering Iron
+•	Cutter
+
+3. How to Make:
+1. First, make the fan frame by measuring and cutting the used cardboard into a box shape (15 × 15 × 20 cm).
+2. On the top part, make two holes like in the video for the wiring.
+3. Then, make a triangle support for the solar panel and attach it on the top.
+4. Connect the solar panel to the cable using a soldering iron.
+5. After that, attach both solar panels to the front and back of the triangle support.
+6. Then, cover the right and left sides with triangle shapes like in the video.
+7. After the frame is finished, cover all parts with colored paper to make it look nice.
+8. Then, on the front side, make a circular hole in the center for the fan blade and a small hole at the top right corner for the switch.
+9. After that, make a support for the fan motor and place it inside the box
+10. Then, attach the fan blades to the motor and glue it to the support.
+11. Put the rechargeable battery into the battery holder and glue it to the bottom of the box. After that, install the switch in its place.
+12. Then, connect the rechargeable battery and the switch to the charging module using cables, like in the video.
+13. Don’t forget to make a hole for the Type-C charger so it can supply power to the charging module.
+14. Attach the top part with the solar panel to the body of the box.
+15. Then, connect the solar panel cable to the charging module, like in the video.
+16. After everything is connected, glue the charging module in the charger hole so it stays in place.
+
+    </p>
+</div>
+
+<div id="Documentation" class="content">
+    <h2>Photo</h2>
+
+    <!-- GANTI LINK GAMBAR DOKUMENTASI -->
+    <img src="dokumbing.jpeg" alt="Dokumentation">
+
+    <p>
+       The making process of this product is documented through photos and videos. Each step, starting from preparing the materials, building the frame, installing the electrical components, until the final decoration, is recorded clearly. This helps users understand the process more easily.
+We also provide a tutorial video that shows the step-by-step process in a simple and clear way. The video is made to help beginners follow the instructions without confusion. In addition, the documentation also shows the final result of the product and how it works, so viewers can see the function of the fan directly.
+    </p>
+</div>
+
+<div id="Benefits" class="content">
+    <h2>EcoCycle Tri-Power Fan</h2>
+    <p>
+       This fan provides cool air for daily use, especially in hot weather. It can help users feel more comfortable and is suitable for personal use at home or in the classroom. With its simple design, this fan is easy to use and practical for everyday needs.
+    </p>
+    <p>
+       In addition, this product is eco-friendly because it uses recycled materials. It also uses three power sources—solar panels, a rechargeable battery, and electricity—making it more flexible and energy-efficient. This fan also encourages creativity and shows that waste materials can be turned into something useful.
+    </p>
+</div>
+
+<div id="Cost & Price" class="content">
+    <h2>Price to Sell & Promote</h2>
+    <p>
+        The production cost is around Rp 27,000. This product is sold for Rp 35,000, with a profit of about Rp 8,000. The price is affordable and suitable for students.
+    </p>
+    <p>
+       We promote this product through social media platforms such as Instagram. We also repost it on our personal accounts to reach a wider audience.
+    </p>
+</div>
+
+</body>
+</html>
